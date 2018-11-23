@@ -17,7 +17,7 @@ class TestSum(unittest.TestCase):
         """
         Test that it can sum a list of fractions
         """
-        data = [Fraction(1, 4), Fraction(1, 4), Fraction(2, 5)]
+        data = [Fraction(1, 4), Fraction(1, 4), Fraction(3, 6)]
         result = sum(data)
         self.assertEqual(result, 1)
 
