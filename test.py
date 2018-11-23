@@ -25,6 +25,7 @@ class TestSum(unittest.TestCase):
         data = "banana"
         with self.assertRaises(TypeError):
             result = sum(data)
+            self.assertEqual(result, 6)
 
 
 if __name__ == '__main__':
