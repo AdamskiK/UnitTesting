@@ -22,10 +22,15 @@ class TestSum(unittest.TestCase):
         self.assertEqual(result, 1.5)
 
     def test_bad_type(self):
-        data = "banana"
-        with self.assertRaises(TypeError):
-            print("raised type error")
-            sum(data)
+        data = [1, 2]
+
+        # a code syntax for python 2
+        self.assertRaises(TypeError, sum(data))
+
+        # a code syntax for python 2
+        # with self.assertRaises(TypeError):
+        #
+        #     sum(data)
 
 
 if __name__ == '__main__':
